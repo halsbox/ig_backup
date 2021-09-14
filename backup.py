@@ -6,7 +6,7 @@ from instaloader.__main__ import main
 if __name__ == '__main__':
     USER = sys.argv[-1]
     sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    _args = ['-s', '--highlights', '--tagged', '--igtv', '-G', '-C', '-l', USER, USER]
+    _args = ['-s', '--highlights', '--tagged', '--igtv', '-G', '-C', '-F', '-l', USER, USER]
     old_sys_argv = sys.argv
     sys.argv = [old_sys_argv[0]] + _args
     result=main()
